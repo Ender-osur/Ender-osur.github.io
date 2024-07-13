@@ -15,7 +15,10 @@ export default function about() {
           Hola, soy
           <div className="h-[250px] w-[auto]">
             <span className="text-[#2cbcc2] sm:text-7xl text-balance">
-              Ender Garizabal (Ender-osur)
+              Ender Garizabal
+              <span
+                className="text-[3xl] text-[#cefdff]"
+              >(Ender-osur)</span>
             </span>
           </div>
         </h1>
