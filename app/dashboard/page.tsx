@@ -14,7 +14,7 @@ export default function Dashboard() {
           height="100%"
           autoPlay
           playsInline
-          src="./endergarizabal.github.io/bg-video-2.webm"
+          src="/endergarizabal.github.io/bg-video-2.webm"
           muted 
           loop
           poster="/endergarizabal.github.io/bg-image.webp"
@@ -27,8 +27,8 @@ export default function Dashboard() {
       <header className="sticky top-0 backdrop-blur-[20px] w-full z-10">
         <Navbar />
       </header>
-      <main className="w-[80%] flex flex-col items-center justify-center gap-[100px]">
-        <section id="about" className="w-[100%] flex items-start justify-center h-[100svh]">
+      <main className="w-[80%] flex flex-col items-center justify-center">
+        <section id="about" className="w-[100%] flex items-center justify-center">
           <About />
         </section>
         <section id="projects" className="w-[100%] flex items-center justify-center">
