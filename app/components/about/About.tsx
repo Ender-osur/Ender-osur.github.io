@@ -13,8 +13,8 @@ export default function about() {
       >
         <h1 className="text-3xl font-bold sm:text-5xl text-slate-100">
           Hola, soy
-          <div className=" w-[max-content]">
-            <span className="text-[#2cbcc2] sm:text-7xl">
+          <div className="h-[250px] w-[auto]">
+            <span className="text-[#2cbcc2] sm:text-7xl text-balance">
               Ender Garizabal (Ender-osur)
             </span>
           </div>
