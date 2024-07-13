@@ -28,7 +28,7 @@ export default function Dashboard() {
         <Navbar />
       </header>
       <main className="w-[80%] flex flex-col items-center justify-center">
-        <section id="about" className="w-[100%] flex items-center justify-center">
+        <section id="about" className="w-[100%] flex items-start justify-center h-[100dvh]">
           <About />
         </section>
         <section id="projects" className="w-[100%] flex items-center justify-center">
