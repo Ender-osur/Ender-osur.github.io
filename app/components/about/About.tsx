@@ -11,12 +11,12 @@ export default function about() {
             <span
               className="text-[#2cbcc2] sm:text-7xl"
             >
-              Ender-osur
+              Ender Garizabal (Ender-osur)
             </span>
           </div>
         </h1>
           <Image
-            src="../endergarizabal.github.io/face.webp"
+            src="/endergarizabal.github.io/face.webp"
             width="280"
             height="280"
             alt="Foto de perfil"
