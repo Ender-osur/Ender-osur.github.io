@@ -4,7 +4,7 @@ import "./footer.css"
 export default function Footer() {
   return (
       <div id="footer-container">
-        <p className="text-xs">© 2024 Ender Garizabal (Ender-osur). Todos los derechos reservados.</p>
+        <p className="text-xs">© 2024 Ender Garizabal (Ender-osur)</p>
         <div className="flex gap-4 sm:gap-6">
           <a className="text-xs hover:underline underline-offset-4" href="#" rel="ugc">
             <svg
