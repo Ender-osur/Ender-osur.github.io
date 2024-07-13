@@ -14,7 +14,7 @@ export default function about() {
         <h1 className="text-3xl font-bold sm:text-5xl text-slate-100">
           Hola, soy
           <div className="h-[250px] w-[auto]">
-            <span className="text-[#2cbcc2] sm:text-7xl text-balance flex justify-center items-center flex-col">
+            <span className="text-[#2cbcc2] sm:text-7xl text-balance flex justify-start items-center flex-col">
               Ender Garizabal
               <span
                 className="text-3xl text-[#cefdff]"
