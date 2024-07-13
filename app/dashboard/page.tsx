@@ -14,14 +14,14 @@ export default function Dashboard() {
           height="100%"
           autoPlay
           playsInline
-          src="/bg-video-2.webm"
+          src="/endergarizabal.github.io/bg-video-2.webm"
           muted 
           loop
           poster="/bg-image.webp"
           className="-z-10"
           >
           Tu navegador no admite el elemento <code>video</code>.
-          <source src="bg-video-2.webm" type="video/webm" />
+          <source src="/endergarizabal.github.io/bg-video-2.webm" type="video/webm" />
         </video>
       </div>
       <header className="sticky top-0 backdrop-blur-[20px] w-full z-10">
