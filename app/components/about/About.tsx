@@ -27,7 +27,7 @@ export default function about() {
           width={380}
           height={380}
           alt="Foto de perfil"
-          className="w-[380px] h-[380px] overflow-hidden rounded-xl object-cover text-[#fff]"
+          className="min-w-[380px] min-h-[380px] overflow-hidden rounded-xl object-cover text-[#fff]"
         />
       </section>
       <section className="" id="about-section-two">

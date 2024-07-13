@@ -7,18 +7,18 @@ import './styles.css';
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="absolute top-0 left-0 w-[100%] h-[100%] backdrop: blur-[5px] -z-10">
+    <div className="flex flex-col items-center justify-center min-w-[100%] p-0 m-0">
+      <div className="absolute top-0 left-0 w-[100%] min-h-[100svh] backdrop: blur-[5px] -z-10">
         <video 
           width="100%"
           height="100%"
           autoPlay
           playsInline
-          src="/endergarizabal.github.io/bg-video-2.webm"
+          src="./endergarizabal.github.io/bg-video-2.webm"
           muted 
           loop
-          poster="/bg-image.webp"
-          className="-z-10"
+          poster="/endergarizabal.github.io/bg-image.webp"
+          className="-z-10 absolute top-0 left-0 w-[100%] h-[100%] object-cover"
           >
           Tu navegador no admite el elemento <code>video</code>.
           <source src="/endergarizabal.github.io/bg-video-2.webm" type="video/webm" />
@@ -27,8 +27,8 @@ export default function Dashboard() {
       <header className="sticky top-0 backdrop-blur-[20px] w-full z-10">
         <Navbar />
       </header>
-      <main className="w-[80%] flex flex-col items-center justify-center">
-        <section id="about" className="w-[100%] flex items-center justify-center">
+      <main className="w-[80%] flex flex-col items-center justify-center gap-[100px]">
+        <section id="about" className="w-[100%] flex items-start justify-center h-[100svh]">
           <About />
         </section>
         <section id="projects" className="w-[100%] flex items-center justify-center">
