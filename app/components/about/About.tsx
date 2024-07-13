@@ -21,10 +21,10 @@ export default function about() {
         </h1>
         <Image
           src="../endergarizabal.github.io/face.webp"
-          width="280"
-          height="280"
+          width="380"
+          height="380"
           alt="Foto de perfil"
-          className="aspect-square overflow-hidden rounded-xl object-cover text-[#fff]"
+          className="h-[380px] aspect-square overflow-hidden rounded-xl object-cover text-[#fff]"
         />
       </section>
       <section className="" id="about-section-two">
