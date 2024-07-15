@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "./about.css";
-import { config } from "@/app/lib/constants";
 
 export default function about() {
   return (
@@ -24,7 +23,7 @@ export default function about() {
           </div>
         </h1>
         <Image
-          src={`../${config.basePath}/face.webp`}
+          src="../face.webp"
           width={380}
           height={380}
           alt="Foto de perfil"
