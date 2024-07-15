@@ -13,7 +13,7 @@ export default function Project() {
       </div>
     </div>
     <div className="mx-auto grid max-w-5xl gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
-      <ProjectCard title="Proyecto" image="../Logo_transp.png" description="Este es un proyecto"/>
+      <ProjectCard title="Proyecto" image="../../Logo_transp.png" description="Este es un proyecto"/>
     </div>
   </div>
   )
