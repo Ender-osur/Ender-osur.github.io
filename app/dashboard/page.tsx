@@ -15,14 +15,14 @@ export default function Dashboard() {
           height="100%"
           autoPlay
           playsInline
-          src={`/${config.basePath}/bg-video-2.webm`}
+          src={`/bg-video-2.webm`}
           muted 
           loop
-          poster={`/${config.basePath}/bg-image.webp`}
+          poster={`/bg-image.webp`}
           className="-z-10 absolute top-0 left-0 w-[100%] h-[100%] object-cover"
           >
           Tu navegador no admite el elemento <code>video</code>.
-          <source src={`/${config.basePath}/bg-video-2.webm`} type="video/webm" />
+          <source src={`/bg-video-2.webm`} type="video/webm" />
         </video>
       </div>
       <header className="sticky top-0 backdrop-blur-[20px] w-full z-10">
