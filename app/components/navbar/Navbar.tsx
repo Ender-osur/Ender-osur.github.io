@@ -9,7 +9,7 @@ export default function Navbar() {
           className='overflow-hidden bg-slate-50 flex items-center justify-center w-[60px] h-[60px] rounded-[50px]'
         >
           <Image
-            src={`../Ender-osur.github.io/Logo_transp.png`}
+            src="../Logo_transp.png"
             width="70"
             height="70"
             alt="Logo"
