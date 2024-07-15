@@ -23,7 +23,7 @@ export default function about() {
           </div>
         </h1>
         <Image
-          src="../../../face.webp"
+          src="../../face.webp"
           width={380}
           height={380}
           alt="Foto de perfil"
