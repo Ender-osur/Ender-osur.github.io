@@ -3,6 +3,7 @@ import Contact from "../components/contact/Contact";
 import Navbar from "../components/navbar/Navbar";
 import Project from "../components/project/Project";
 import Footer from "../components/footer/Footer";
+import { config} from "../lib/constants";
 import './styles.css';
 
 export default function Dashboard() {
@@ -14,14 +15,14 @@ export default function Dashboard() {
           height="100%"
           autoPlay
           playsInline
-          src="/endergarizabal.github.io/bg-video-2.webm"
+          src={`/${config.basePath}/bg-video-2.webm`}
           muted 
           loop
-          poster="/endergarizabal.github.io/bg-image.webp"
+          poster={`/${config.basePath}/bg-image.webp`}
           className="-z-10 absolute top-0 left-0 w-[100%] h-[100%] object-cover"
           >
           Tu navegador no admite el elemento <code>video</code>.
-          <source src="/endergarizabal.github.io/bg-video-2.webm" type="video/webm" />
+          <source src={`/${config.basePath}/bg-video-2.webm`} type="video/webm" />
         </video>
       </div>
       <header className="sticky top-0 backdrop-blur-[20px] w-full z-10">

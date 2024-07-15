@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import "./navbar.css"
+import { config } from '@/app/lib/constants'
 
 export default function Navbar() {
   return (
@@ -8,7 +9,7 @@ export default function Navbar() {
           className='overflow-hidden bg-slate-50 flex items-center justify-center w-[60px] h-[60px] rounded-[50px]'
         >
           <Image
-            src="../endergarizabal.github.io/Logo_transp.png"
+            src={`../${config.basePath}/Logo_transp.png`}
             width="70"
             height="70"
             alt="Logo"

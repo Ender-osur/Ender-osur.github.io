@@ -1,5 +1,6 @@
 import ProjectCard from './ProjectCard'
 import "./project.css"
+import { config } from '@/app/lib/constants'
 
 export default function Project() {
   return (
@@ -13,7 +14,7 @@ export default function Project() {
       </div>
     </div>
     <div className="mx-auto grid max-w-5xl gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
-      <ProjectCard title="Proyecto" image="../endergarizabal.github.io/Logo_transp.png" description="Este es un proyecto"/>
+      <ProjectCard title="Proyecto" image={`../${config.basePath}/Logo_transp.png`} description="Este es un proyecto"/>
     </div>
   </div>
   )
