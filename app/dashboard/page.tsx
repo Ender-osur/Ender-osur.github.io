@@ -7,7 +7,9 @@ import './styles.css';
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col items-center justify-center min-w-[100%] p-0 m-0">
+    <div 
+      id="container"
+      className={`flex flex-col items-center justify-center min-w-[100%] p-0 m-0`}>
       <div className="absolute top-0 left-0 w-[100%] min-h-[100svh] backdrop: blur-[5px] -z-10">
         <video 
           width="100%"
