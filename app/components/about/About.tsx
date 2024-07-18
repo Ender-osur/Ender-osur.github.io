@@ -4,16 +4,14 @@ import styles from "./about.module.css";
 export default function about() {
   return (
     <div
-      id="about-container"
-      className="w-[80%] flex flex-col items-center justify-center"
+      className="w-[100%] flex flex-col sm:items-center  sm:justify-center sm:h-[auto] h-[100%] "
     >
       <section
-        id="about-section-one"
-        className="flex flex-row w-[100%] h-[60vh] justify-between px-14 items-center"
+        className="flex flex-col w-[100%] sm:flex-row  h-[60vh] justify-between sm:px-32 items-center"
       >
         <h1 className="text-3xl font-bold sm:text-5xl text-slate-100">
           Hola, soy
-          <div className="h-[250px] w-[auto]">
+          <div className="sm:h-[250px] w-[auto]">
             <span className="text-[#2cbcc2] sm:text-7xl text-balance flex justify-start items-start flex-col">
               Ender Garizabal
               <span
@@ -27,10 +25,10 @@ export default function about() {
           width={380}
           height={380}
           alt="Foto de perfil"
-          className="min-w-[380px] min-h-[380px] overflow-hidden rounded-xl object-cover text-[#fff]"
+          className="min-w-[380px] overflow-hidden rounded-xl object-cover text-[#fff]"
         />
       </section>
-      <section className="" id="about-section-two">
+      <section className={`sm:px-32`}>
         <p className="mt-4 text-muted-foreground md:text-xl text-slate-300">
           Inicié desarrollando sistemas IoT con PIC y mikroC y con ESP32
           micropython; usé ec2 de AWS, MQTT, flask y mariadb. Luego me introduje

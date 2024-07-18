@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import "./navbar.css"
+import styles from "./navbar.module.css"
 
 
 export default function Navbar() {
@@ -17,19 +17,18 @@ export default function Navbar() {
           />
         </div>
         <nav className="flex gap-8 sm:gap-14 text-slate-50">
-          <a className="text-base md:text-lg lg:text-[1.5rem] font-[300] hover:underline underline-offset-4" href="#" rel="ugc">
+          <a className={`text-base md:text-lg lg:text-[1.5rem] font-[300] hover:underline underline-offset-4" href="#" rel="ugc ${styles.textMenu}`}>
             Sobre mí
           </a>
-          <a className="text-base md:text-lg lg:text-[1.5rem] font-[300] hover:underline underline-offset-4" href="#" rel="ugc">
+          <a className={`text-base md:text-lg lg:text-[1.5rem] font-[300] hover:underline underline-offset-4" href="#" rel="ugc ${styles.textMenu}`}>
             Proyectos
           </a>
-          <a className="text-base md:text-lg lg:text-[1.5rem] font-[300] hover:underline underline-offset-4" href="#" rel="ugc">
+          <a className={`text-base md:text-lg lg:text-[1.5rem] font-[300] hover:underline underline-offset-4" href="#" rel="ugc ${styles.textMenu}`}>
             Contacto
           </a>
         </nav>
         <button
-          id="theme-button"
-          className="">
+          className={`${styles.themeButton}`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
