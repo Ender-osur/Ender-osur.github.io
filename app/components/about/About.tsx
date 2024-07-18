@@ -7,12 +7,12 @@ export default function about() {
       className="w-[100%] flex flex-col sm:items-center  sm:justify-center sm:h-[auto] h-[100%] "
     >
       <section
-        className="flex flex-col w-[100%] sm:flex-row  h-[60vh] justify-between sm:px-32 items-center"
+        className="flex flex-col w-[100%] lg:flex-row  h-[60vh] lg:justify-between sm:px-32 lg:items-center"
       >
         <h1 className="text-3xl font-bold sm:text-5xl text-slate-100">
           Hola, soy
           <div className="sm:h-[250px] w-[auto]">
-            <span className="text-[#2cbcc2] sm:text-7xl text-balance flex justify-start items-start flex-col">
+            <span className="text-[#2cbcc2] sm:text-7xl text-balance flex  justify-center lg:justify-start items-start flex-col">
               Ender Garizabal
               <span
                 className="text-3xl text-[#cefdff]"
