@@ -6,8 +6,8 @@ export default function Project() {
     <div className="container px-4 md:px-6">
     <div className="flex flex-col items-center justify-center space-y-4 text-center">
       <div className="space-y-2">
-        <h2 className="text-3xl tracking-tighter sm:text-5xl text-slate-200 font-medium">Mis Proyectos</h2>
-        <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-slate-400 font-light backdrop:blur-[200px]">
+        <h2 className="text-3xl tracking-tighter sm:text-5xl text-slate-800 font-bold">Mis Proyectos</h2>
+        <p className="max-w-[900px] text-slate-700 text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-normal backdrop:blur-[200px]">
           Aquí puedes ver algunos de mis proyectos más destacados.
         </p>
       </div>

@@ -1,9 +1,0 @@
-#send-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  font-weight: 600;
-  background-color: #2cbcc2;
-  pointer-events: none;
-}

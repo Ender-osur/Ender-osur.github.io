@@ -1,0 +1,18 @@
+
+.container {
+  background-color: #2cbcc2;
+}
+
+.sendButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-weight: 600;
+  background-color: #e6feff;
+  box-shadow:0px 3px 10px -5px black;
+}
+.sendButton:hover {
+  transform: scale(1.05);
+  
+}

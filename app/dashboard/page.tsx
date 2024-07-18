@@ -7,7 +7,7 @@ import './styles.css';
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col items-center justify-center min-w-[100%] p-0 m-0">
+    <div className="flex flex-col items-center justify-center min-w-[100%] p-0 m-0 pb-10">
       <div className="absolute top-0 left-0 w-[100%] min-h-[100svh] backdrop: blur-[5px] -z-10">
         <video 
           width="100%"
@@ -27,11 +27,11 @@ export default function Dashboard() {
       <header className="sticky top-0 backdrop-blur-[20px] w-full z-10">
         <Navbar />
       </header>
-      <main className="w-[80%] flex flex-col items-center justify-center">
-        <section id="about" className="w-[100%] flex items-start justify-center h-[100dvh]">
+      <main className="w-[100%] flex flex-col items-center justify-center">
+        <section id="about" className="w-[80%] flex items-start justify-center h-[100dvh]">
           <About />
         </section>
-        <section id="projects" className="w-[100%] flex items-center justify-center">
+        <section id="projects" className="w-[80%] flex items-center justify-center">
           <Project />
         </section>
         <section id="contact" className="w-[100%] flex items-center justify-center">
