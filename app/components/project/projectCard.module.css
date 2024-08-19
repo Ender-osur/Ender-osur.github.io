@@ -1,14 +1,17 @@
 .buttonCard {
   border: 3px solid #cefdff;
   box-shadow: 0px 3px 10px -5px black;
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 .buttonCard:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   box-shadow: 0px 3px 10px -5px #cefdff, 0px 3px 10px -1px black;
 }
 
 
 .imageContainer {
-
+  
 }

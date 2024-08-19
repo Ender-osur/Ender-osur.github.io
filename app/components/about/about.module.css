@@ -1,0 +1,13 @@
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.textTitle {
+  text-shadow: 0px 0px 3px rgb(255, 255, 255), 1px 0px 2px rgb(255, 255, 255);
+}

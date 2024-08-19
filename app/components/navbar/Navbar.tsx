@@ -6,17 +6,17 @@ export default function Navbar() {
   return (
       <div id="navbar-container" className="px-5 lg:px-6 h-15 flex items-center justify-between p-2">
         <div
-          className='overflow-hidden bg-slate-50 flex items-center justify-center w-[60px] h-[60px] rounded-[50px]'
+          className='overflow-hidden bg-slate-50 flex items-center justify-center md:w-[70px] sm:w-[50px] w-[30px] aspect-square rounded-[50px]'
         >
           <Image
             src="../Logo_transp.png"
-            width="70"
-            height="70"
+            width="60"
+            height="60"
             alt="Logo"
             className="m-0 aspect-square"
           />
         </div>
-        <nav className="flex gap-8 sm:gap-14 text-slate-50">
+        <nav className="flex flex-1 justify-around sm:justify-center sm:gap-8 text-slate-50">
           <a className={`text-base md:text-lg lg:text-[1.5rem] font-[300] hover:underline underline-offset-4" href="#" rel="ugc ${styles.textMenu}`}>
             Sobre mí
           </a>
