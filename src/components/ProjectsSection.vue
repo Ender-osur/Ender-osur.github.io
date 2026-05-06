@@ -51,6 +51,13 @@ watchEffect(() => {
       tags: ['PHP', 'React.js', 'Redux', 'TS', 'Hexagonal Architecture'],
       link: 'https://sioma.app/user/login.php',
     },
+    {
+      title: t('projects.title6'),
+      description: t('projects.description6'),
+      image: 'image6.png',
+      tags: ['Monolito', 'Next.js', 'Zustand', 'TS', 'TailwindCSS'],
+      link: 'https://fylakax.com',
+    },
   ];
 });
 </script>

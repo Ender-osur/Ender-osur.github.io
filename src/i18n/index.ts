@@ -69,6 +69,8 @@ const messages = {
       description4: "Chatbot integrated into a backend connected to an OpenAI assistant that, based on Colombian traffic laws, answers users' questions about regulations and can be used as a legal advisor",
       title5: 'Authentication and authorization system',
       description5: 'Authentication and authorization system for an agricultural company',
+      title6: 'Fylakax',
+      description6: 'Monolith application for an events with friends',
     },
     contact: {
       title: 'Get in Touch',
@@ -149,6 +151,8 @@ const messages = {
       description4: 'Chatbot integrado a un backend conectado a un asistente de openai que, basado en las leyes de tránsito colombianas, responde a los usuarios acerca de la normativa y puede ser usuado como asesor legal',
       title5: 'Sistema de autenticación y autorización',
       description5: 'Sistema de autenticación y autorización para una empresa de agricultura',
+      title6: 'Fylakax',
+      description6: 'Aplicación monolítica para eventos con amigos',
     },
     contact: {
       title: 'Contacto',
