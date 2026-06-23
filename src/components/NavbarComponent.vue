@@ -27,11 +27,9 @@ const handleScroll = () => {
 
   if (navbar) {
     if (scrollY.value > 0) {
-      navbar.classList.add('bg-slate-300', 'dark:bg-gray-800/80');
-      navbar.classList.remove('bg-slate-200', 'dark:bg-gray-900/80');
+      navbar.classList.add('shadow-lg', 'shadow-black/5');
     } else {
-      navbar.classList.add('bg-slate-200', 'dark:bg-gray-900/80');
-      navbar.classList.remove('bg-slate-300', 'dark:bg-gray-800/80');
+      navbar.classList.remove('shadow-lg', 'shadow-black/5');
     }
   }
 };
@@ -64,12 +62,12 @@ const navItems = [
 <template>
   <nav
     id="navbar"
-    class="fixed w-full bg-slate-200 dark:bg-gray-900/80 backdrop-blur-sm z-50 transition-colors duration-300"
+    class="fixed w-full bg-dawn/85 dark:bg-midnight/80 border-b border-[#5c392920] dark:border-[#ff996620] backdrop-blur-md z-50 transition-colors duration-300"
   >
-    <div class="px-8 py-4 w-full justify-between">
+    <div class="px-8 py-3 w-full justify-between">
       <div class="flex items-center justify-between">
-        <a href="#" class="text-4xl font-bold text-primary">
-          Osur.dev
+        <a href="#" class="font-display text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
+          Osur<span class="text-primary">.dev</span>
         </a>
 
         <div v-if="isMobile">
@@ -101,11 +99,11 @@ const navItems = [
             v-for="item in navItems"
             :key="item.href"
             :href="item.href"
-            class="underline-container hover:text-primary transition-colors duration-200 dark:text-[#5c3929]"
+            class="underline-container font-mono text-xs tracking-[0.18em] uppercase text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-[#ff9966] transition-colors duration-200"
             v-tippy="{ content: $t(item.label) }"
           >
             {{ $t(item.label) }}
-            <div class="underline bg-[#5c3929] dark:bg-[#ff9966]"></div>
+            <div class="underline bg-primary dark:bg-[#ff9966]"></div>
           </a>
         </div>
         <div class="relative flex flex-row">

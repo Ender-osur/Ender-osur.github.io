@@ -41,15 +41,16 @@ const handleSubmit = async () => {
 <template>
   <section
     id="contact"
-    class="py-20 bg-transparent dark:bg-transparent transition-colors duration-300 flex justify-center items-center"
+    class="relative bg-dawn-raised dark:bg-midnight-raised transition-colors duration-300 flex justify-center items-center"
   >
-    <div class="container mx-auto px-4" data-aos="fade-up">
-      <h2
-        class="text-4xl font-bold text-center mb-12 font-[monospace] tracking-[2px] text-gray-800 dark:text-gray-300"
-      >
-        {{ $t('contact.title') }}
-      </h2>
-      <div v-if="!isSubmitted" class="w-full">
+    <div class="container mx-auto flex flex-col items-center" data-aos="fade-up">
+      <div class="flex flex-col items-center gap-4">
+        <p class="eyebrow">{{ $t('contact.eyebrow') }}</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 dark:text-gray-100">
+          {{ $t('contact.title') }}
+        </h2>
+      </div>
+      <div v-if="!isSubmitted" class="w-full max-w-xl">
         <form
           @submit.prevent="handleSubmit"
           class="space-y-6 flex flex-col w-full items-center gap-2"
@@ -110,7 +111,7 @@ const handleSubmit = async () => {
           <button
             type="submit"
             :disabled="isLoading"
-            class="cursor-pointer font-[monospace] px-4 py-2 rounded-lg bg-primary hover:text-gray-900 text-gray-600 dark:text-gray-400 font-medium hover:bg-primary-dark transition-colors border-2 border-gray-500 hover:border-gray-900 hover:dark:text-gray-50 hover:dark:border-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            class="cursor-pointer font-medium px-8 py- rounded-full bg-primary text-white hover:bg-[#d2551f] transition-colors shadow-lg shadow-primary/25 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {{ isLoading ? 'Enviando...' : $t('contact.send') }}
           </button>

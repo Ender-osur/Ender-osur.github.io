@@ -13,16 +13,16 @@ const isDark = useDark();
 <template>
   <div
     :class="{ dark: isDark }"
-    class="main bg-gray-200 dark:bg-gray-900 transition-colors duration-300 flex"
+    class="main bg-dawn dark:bg-midnight transition-colors duration-300 flex"
   >
     <SunMoonComponent />
     <header class="shrink-[0] min-h-5">
       <NavbarComponent />
     </header>
-    <main class="grow-1 overflow-y-auto flex flex-col top-16 sm:top-12 relative">
+    <main class="grow-1 overflow-y-auto flex flex-col top-16 sm:top-12 relative ">
       <router-view />
     </main>
-    <footer class="shrink-[0]">
+    <footer class="shrink-[0] h-80 flex items-center justify-center">
       <FooterComponent />
     </footer>
     <ScrollTop />

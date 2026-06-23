@@ -16,9 +16,11 @@ const messages = {
       description: 'I create beautiful and functional web applications',
       contact: 'Contact Me',
       projects: 'View Projects',
+      available: 'Open to opportunities',
     },
     experience: {
       title: 'Experience',
+      eyebrow: 'career log',
       exp1: {
         title: 'Frontend Developer',
         company: 'Sioma Eco Zomac',
@@ -43,6 +45,7 @@ const messages = {
     },
     about: {
       title: 'About Me',
+      eyebrow: 'profile',
       description1:
         "I'm a passionate Full Stack Developer with experience in building modern web applications. I specialize in React, Vue.js, Node.js, and various modern web technologies.",
       description2:
@@ -50,6 +53,7 @@ const messages = {
     },
     skills: {
       title: 'My Skills',
+      eyebrow: 'toolkit',
       soft: 'Soft',
       hard: 'Hard',
       softSkills:
@@ -58,6 +62,7 @@ const messages = {
 
     projects: {
       title: 'Projects',
+      eyebrow: 'selected work',
       viewProject: 'View Project',
       title1: 'Website created in 1 hour for a client',
       description1: 'A simple yet elegant website for a client company',
@@ -74,6 +79,7 @@ const messages = {
     },
     contact: {
       title: 'Get in Touch',
+      eyebrow: 'say hello',
       name: 'Name',
       email: 'Email',
       message: 'Message',
@@ -99,9 +105,11 @@ const messages = {
       description: 'Creo aplicaciones web hermosas y funcionales',
       contact: 'Contáctame',
       projects: 'Ver Proyectos',
+      available: 'Disponible para proyectos',
     },
     experience: {
       title: 'Experiencia',
+      eyebrow: 'trayectoria',
       exp1: {
         title: 'Desarrollador frontend',
         company: 'Sioma Eco Zomac',
@@ -126,6 +134,7 @@ const messages = {
     },
     about: {
       title: 'Sobre Mí',
+      eyebrow: 'perfil',
       description1:
         'Soy un Desarrollador Full Stack apasionado con experiencia en la construcción de aplicaciones web modernas. Me especializo en React, Vue.js, Node.js y varias tecnologías web modernas.',
       description2:
@@ -133,6 +142,7 @@ const messages = {
     },
     skills: {
       title: 'Mis Habilidades',
+      eyebrow: 'herramientas',
       soft: 'Blandas',
       hard: 'Duras',
       softSkills:
@@ -140,6 +150,7 @@ const messages = {
     },
     projects: {
       title: 'Proyectos',
+      eyebrow: 'trabajos',
       viewProject: 'Ver Proyecto',
       title1: 'Web creada en 1 hora para un cliente',
       description1: 'Un sitio web simple pero elegante para una empresa cliente',
@@ -156,6 +167,7 @@ const messages = {
     },
     contact: {
       title: 'Contacto',
+      eyebrow: 'saluda',
       name: 'Nombre',
       email: 'Correo',
       message: 'Mensaje',

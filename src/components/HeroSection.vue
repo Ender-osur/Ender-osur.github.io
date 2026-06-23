@@ -3,20 +3,34 @@ const face = 'face.webp';
 </script>
 
 <template>
-  <section class="min-h-screen flex items-center justify-center flex-col">
-    <div class="object-cover bg-black overflow-hidden rounded-[50px]">
-      <img
-        :src="face"
-        alt="face"
-        width="120px"
-        height="150px"
-        class="w-68 rounded-[50px] overflow-hidden"
+  <section class="relative min-h-screen flex items-center justify-center flex-col overflow-hidden">
+    <div class="relative">
+      <div
+        class="absolute -inset-1.5 rounded-[50px] bg-gradient-to-br from-primary/60 to-secondary/50 blur-lg opacity-70"
       />
+      <div class="relative bg-black overflow-hidden rounded-[50px] ring-1 ring-white/15">
+        <img
+          :src="face"
+          alt="Ender Garizabal"
+          width="120px"
+          height="150px"
+          class="w-68 rounded-[50px] overflow-hidden"
+        />
+      </div>
     </div>
-    <div class="title px-4 py-32 text-center items-center justify-center" data-aos="fade-up">
-      <h1
-        class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-gray-700 dark:text-gray-100"
+    <div class="title px-4 pt-12 pb-28 text-center items-center justify-center" data-aos="fade-up">
+      <p
+        class="font-mono text-xs tracking-[0.25em] uppercase text-gray-600 dark:text-gray-400 mb-6 flex items-center justify-center gap-2.5"
       >
+        <span class="relative flex h-2 w-2">
+          <span
+            class="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"
+          />
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+        </span>
+        {{ $t('hero.available') }}
+      </p>
+      <h1 class="text-5xl md:text-7xl font-bold mb-8 text-gray-800 dark:text-gray-100">
         <span class="hi text-gray-600 dark:text-gray-300">{{ $t('hero.hi') }}</span
         >,
         <span class="iam text-gray-600 dark:text-gray-300">
@@ -61,19 +75,30 @@ const face = 'face.webp';
           />
         </svg>
       </div>
-      <p class="text-2xl md:text-4xl text-gray-700 dark:text-gray-300">
+      <p class="font-display text-2xl md:text-4xl font-medium text-gray-700 dark:text-gray-200 mt-2">
         {{ $t('hero.subtitle') }}
       </p>
-      <p class="text-xl text-gray-500 dark:text-gray-500 pb-12">
+      <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 pb-12 max-w-md mx-auto">
         {{ $t('hero.description') }}
       </p>
-      <div class="flex justify-center gap-12">
-        <a href="#contact" class="hover:bg-[#ff996620] px-2">{{ $t('hero.contact') }}</a>
-        <a href="#projects" class="hover:bg-[#ff996620] px-2">{{ $t('hero.projects') }}</a>
+      <div class="flex justify-center gap-4 flex-col sm:flex-row">
+        <a
+          href="#contact"
+          class="group inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-primary text-white font-medium hover:bg-[#d2551f] transition-colors shadow-lg shadow-primary/25"
+        >
+          {{ $t('hero.contact') }}
+          <span class="transition-transform group-hover:translate-x-1">&rarr;</span>
+        </a>
+        <a
+          href="#projects"
+          class="inline-flex items-center justify-center px-7 py-3 rounded-full border border-[#5c392950] dark:border-[#ff996640] text-gray-700 dark:text-gray-200 font-medium hover:border-primary hover:text-primary dark:hover:text-[#ff9966] transition-colors"
+        >
+          {{ $t('hero.projects') }}
+        </a>
       </div>
     </div>
     <div
-      class="ilumination absolute w-[90vw] h-[10vh] bg-[#b77929] dark:bg-[#ffffff40] blur-[140px]"
+      class="ilumination absolute -z-0 w-[90vw] h-[12vh] bg-[#e8693a55] dark:bg-[#6c92b840] blur-[150px] pointer-events-none"
     />
   </section>
 </template>

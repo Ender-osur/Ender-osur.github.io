@@ -34,44 +34,51 @@ const softSkillsArray = computed(() => {
 <template>
   <section
     id="skills"
-    class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300 flex justify-center items-center w-full"
+    class="py-24 bg-dawn-raised dark:bg-midnight-raised transition-colors duration-300 flex justify-center items-center w-full"
   >
-    <main class="container mx-auto px-4 flex flex-col gap-8 w-full" data-aos="fade-up">
-      <h2
-        class="text-4xl font-bold text-center mb-12 tracking-[2px] text-gray-800 dark:text-gray-300 transition-colors"
-      >
-        {{ $t('skills.title') }}
-      </h2>
-      <div class="grid grid-col-1 sm:grid-cols-2 justify-center place-items-center gap-4">
+    <main class="container mx-auto px-4 flex flex-col gap-14 w-full" data-aos="fade-up">
+      <div class="flex flex-col items-center gap-4">
+        <p class="eyebrow">{{ $t('skills.eyebrow') }}</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 dark:text-gray-100">
+          {{ $t('skills.title') }}
+        </h2>
+      </div>
+      <div class="grid grid-col-1 sm:grid-cols-2 justify-center items-start gap-12">
         <article class="flex flex-col w-full h-full items-center">
-          <div class="flex flex-col justify-center items-center gap-8">
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-300">
+          <div class="flex flex-col w-full max-w-md gap-6">
+            <h3 class="font-mono text-sm tracking-[0.2em] uppercase text-[#5c3929] dark:text-[#ff9966] text-center">
               {{ $t('skills.soft') }}
             </h3>
-            <ul class="text-gray-700 dark:text-gray-300 gap-4 flex flex-col items-center">
-              <li v-for="(softSkill, index) in softSkillsArray" :key="index" class="text-wrap">
-                <span class="text-[#5c3929] dark:text-[#ff9966]">{{ softSkill.header }}</span>:
-                <span class="text-gray-700 dark:text-gray-300">{{ softSkill.body }}</span>
+            <ul class="text-gray-700 dark:text-gray-300 flex flex-col gap-5">
+              <li
+                v-for="(softSkill, index) in softSkillsArray"
+                :key="index"
+                class="border-l-2 border-[#5c392930] dark:border-[#ff996640] pl-4"
+              >
+                <span class="block font-display font-semibold text-gray-800 dark:text-gray-100 mb-0.5">{{ softSkill.header }}</span>
+                <span class="text-gray-600 dark:text-gray-400 text-[0.95rem] leading-relaxed">{{ softSkill.body }}</span>
               </li>
             </ul>
           </div>
         </article>
 
-        <article class="flex flex-col w-full h-full items-center gap-8">
-          <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-300">
+        <article class="flex flex-col w-full h-full items-center gap-6">
+          <h3 class="font-mono text-sm tracking-[0.2em] uppercase text-[#5c3929] dark:text-[#ff9966]">
             {{ $t('skills.hard') }}
           </h3>
           <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             <div
               v-for="skill in skills"
               :key="skill.name"
-              class="w-32 h-32 dark:bg-gray-900 bg-white flex flex-col justify-center items-center rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110 select-none"
+              class="group w-32 h-32 bg-white dark:bg-[#0e1a28] border border-[#5c392912] dark:border-white/5 flex flex-col justify-center items-center gap-2.5 rounded-xl shadow-sm hover:shadow-lg hover:border-primary/40 dark:hover:border-[#ff9966]/40 transition-all duration-300 hover:-translate-y-1 select-none"
               data-aos="zoom-in"
             >
-              <img :src="skill.icon" :alt="skill.name" class="w-12 h-12 mb-2" />
-              <h3
-                class="text-[.8rem] sm:text-[1rem] font-semibold text-gray-700 dark:text-gray-300"
-              >
+              <img
+                :src="skill.icon"
+                :alt="skill.name"
+                class="w-11 h-11 transition-transform duration-300 group-hover:scale-110"
+              />
+              <h3 class="font-mono text-[0.72rem] tracking-wide text-gray-600 dark:text-gray-400">
                 {{ skill.name }}
               </h3>
             </div>

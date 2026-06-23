@@ -8,7 +8,7 @@ import SkillsSection from '@/components/SkillsSection.vue';
 </script>
 
 <template>
-  <main>
+  <main class="flex flex-col gap-24">
     <HeroSection />
     <ExperienceComponent />
     <ProjectsSection />

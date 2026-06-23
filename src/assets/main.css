@@ -2,41 +2,94 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Scrollbar general */
-html::-webkit-scrollbar {
-  width: 15px;
+@theme {
+  /* Type system — celestial / observatory direction */
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* Accents: the sun (warm) and the moon (cool) */
+  --color-primary: #e8693a;
+  --color-secondary: #6c92b8;
+
+  /* Surfaces — dawn-sand (light) and midnight-navy (dark) */
+  --color-dawn: #f1e9dd;
+  --color-dawn-raised: #faf5ec;
+  --color-midnight: #0c1622;
+  --color-midnight-raised: #13202f;
 }
 
-/* Scrollbar en modo claro (por defecto) */
+/* Reusable structural label — mono eyebrow above sections */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #5c3929;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+html.dark .eyebrow {
+  color: #ff9966;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 1.75rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+::selection {
+  background: #ff9966;
+  color: #0c1622;
+}
+
+@layer base {
+  a {
+    color: #5c3929;
+  }
+
+  html.dark a {
+    color: #ff9966;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Scrollbar general */
+html::-webkit-scrollbar {
+  width: 14px;
+}
+
 html::-webkit-scrollbar-track {
-  background: #d8d8d8;
+  background: #e6dccd;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #1018282c;
+  background-color: #c8a988;
   border-radius: 100px;
-  border: 3px solid #ffe0d0;
+  border: 3px solid #f1e9dd;
 }
 
-/* Scrollbar en modo oscuro */
 html.dark::-webkit-scrollbar-track {
-  background: #101828;
+  background: #0c1622;
 }
 
 html.dark::-webkit-scrollbar-thumb {
   background-color: #ff9966;
-  border: 3px solid #2b2b2b;
+  border: 3px solid #13202f;
 }
 
 html::-webkit-scrollbar-thumb:hover {
   background-color: #7b503a;
   cursor: pointer;
-}
-
-a {
-  color: #5c3929;
-}
-
-html.dark a {
-  color: #ff9966;
 }
